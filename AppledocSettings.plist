@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>--input</key>
+	<array>
+		<string>PTNSampleProject</string>
+	</array>
+	<key>--ignore</key>
+	<array>
+		<string>PTNSampleProjectTests</string>
+		<string>PTNSampleProjectAppTests</string>
+		<string>Externals</string>
+		<string>Documentation</string>
+		<string>.m</string>
+	</array>
+	<key>--project-company</key>
+	<string>sample</string>
+	<key>--project-name</key>
+	<string>Sample project</string>
+	<key>--company-id</key>
+	<string>com.sample</string>
+	<key>--output</key>
+	<string>Documentation</string>
+	<key>--create-docset</key>
+	<false/>
+	<key>--keep-undocumented-objects</key>
+	<true/>
+	<key>--keep-undocumented-members</key>
+	<true/>
+</dict>
+</plist>

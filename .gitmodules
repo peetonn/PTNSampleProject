@@ -1,0 +1,6 @@
+[submodule "Externals/PTNBlocks"]
+	path = Externals/PTNBlocks
+	url = https://github.com/peetonn/PTNArtifacts.git
+[submodule "Externals/OCMock"]
+	path = Externals/OCMock
+	url = git://github.com/erikdoe/ocmock.git

@@ -6,7 +6,28 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		F3A539951751403E0007DA9B /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F3A539961751403E0007DA9B /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				F3A53999175140430007DA9B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		F3A5399B175140930007DA9B /* AppledocSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3A5399A175140930007DA9B /* AppledocSettings.plist */; };
+		F3A539A21751424B0007DA9B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACA151175132F100687D3D /* SenTestingKit.framework */; };
+		F3A539A31751424B0007DA9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACA133175132F100687D3D /* UIKit.framework */; };
+		F3A539A41751424B0007DA9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACA135175132F100687D3D /* Foundation.framework */; };
+		F3A539AA1751424B0007DA9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3A539A81751424B0007DA9B /* InfoPlist.strings */; };
+		F3A539AD1751424C0007DA9B /* PTNSampleProjectAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A539AC1751424C0007DA9B /* PTNSampleProjectAppTests.m */; };
+		F3A539C1175144A40007DA9B /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A539BD175144750007DA9B /* libOCMock.a */; };
 		F3ACA134175132F100687D3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACA133175132F100687D3D /* UIKit.framework */; };
 		F3ACA136175132F100687D3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACA135175132F100687D3D /* Foundation.framework */; };
 		F3ACA138175132F100687D3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACA137175132F100687D3D /* CoreGraphics.framework */; };
@@ -21,9 +42,40 @@
 		F3ACA154175132F100687D3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACA135175132F100687D3D /* Foundation.framework */; };
 		F3ACA15C175132F100687D3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3ACA15A175132F100687D3D /* InfoPlist.strings */; };
 		F3ACA15F175132F100687D3D /* PTNSampleProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ACA15E175132F100687D3D /* PTNSampleProjectTests.m */; };
+		F3ACA177175134D500687D3D /* libPTNArtifacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ACA174175134C200687D3D /* libPTNArtifacts.a */; };
+		F3ACA18F17513AF800687D3D /* SPStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ACA18E17513AF800687D3D /* SPStorage.m */; };
+		F3ACA19217513B9C00687D3D /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3ACA19117513B9C00687D3D /* Defaults.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F3A539B8175144750007DA9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3A539B2175144750007DA9B /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0A814632FD000B04273;
+			remoteInfo = OCMock;
+		};
+		F3A539BA175144750007DA9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3A539B2175144750007DA9B /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0C014632FD000B04273;
+			remoteInfo = OCMockTests;
+		};
+		F3A539BC175144750007DA9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3A539B2175144750007DA9B /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0DC14632FF700B04273;
+			remoteInfo = OCMockLib;
+		};
+		F3A539BF175144990007DA9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3A539B2175144750007DA9B /* OCMock.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 030EF0DB14632FF700B04273;
+			remoteInfo = OCMockLib;
+		};
 		F3ACA155175132F100687D3D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F3ACA128175132F100687D3D /* Project object */;
@@ -31,9 +83,31 @@
 			remoteGlobalIDString = F3ACA12F175132F100687D3D;
 			remoteInfo = PTNSampleProject;
 		};
+		F3ACA173175134C200687D3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3ACA16A175134C100687D3D /* PTNArtifacts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3C642AE1626F4EC00D5D81B;
+			remoteInfo = PTNArtifacts;
+		};
+		F3ACA175175134CE00687D3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3ACA16A175134C100687D3D /* PTNArtifacts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F3C642AD1626F4EC00D5D81B;
+			remoteInfo = PTNArtifacts;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3A5399A175140930007DA9B /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppledocSettings.plist; path = ../AppledocSettings.plist; sourceTree = "<group>"; };
+		F3A539A11751424B0007DA9B /* PTNSampleProjectAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTNSampleProjectAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A539A71751424B0007DA9B /* PTNSampleProjectAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTNSampleProjectAppTests-Info.plist"; sourceTree = "<group>"; };
+		F3A539A91751424B0007DA9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3A539AB1751424C0007DA9B /* PTNSampleProjectAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTNSampleProjectAppTests.h; sourceTree = "<group>"; };
+		F3A539AC1751424C0007DA9B /* PTNSampleProjectAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTNSampleProjectAppTests.m; sourceTree = "<group>"; };
+		F3A539AE1751424C0007DA9B /* PTNSampleProjectAppTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTNSampleProjectAppTests-Prefix.pch"; sourceTree = "<group>"; };
+		F3A539B2175144750007DA9B /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = Externals/OCMock/Source/OCMock.xcodeproj; sourceTree = SOURCE_ROOT; };
 		F3ACA130175132F100687D3D /* PTNSampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTNSampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3ACA133175132F100687D3D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F3ACA135175132F100687D3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,13 +127,29 @@
 		F3ACA15B175132F100687D3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F3ACA15D175132F100687D3D /* PTNSampleProjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTNSampleProjectTests.h; sourceTree = "<group>"; };
 		F3ACA15E175132F100687D3D /* PTNSampleProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTNSampleProjectTests.m; sourceTree = "<group>"; };
+		F3ACA16A175134C100687D3D /* PTNArtifacts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PTNArtifacts.xcodeproj; path = Externals/PTNBlocks/PTNArtifacts/PTNArtifacts.xcodeproj; sourceTree = SOURCE_ROOT; };
+		F3ACA18D17513AF800687D3D /* SPStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPStorage.h; sourceTree = "<group>"; };
+		F3ACA18E17513AF800687D3D /* SPStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPStorage.m; sourceTree = "<group>"; };
+		F3ACA19117513B9C00687D3D /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F3A5399D1751424B0007DA9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A539C1175144A40007DA9B /* libOCMock.a in Frameworks */,
+				F3A539A21751424B0007DA9B /* SenTestingKit.framework in Frameworks */,
+				F3A539A31751424B0007DA9B /* UIKit.framework in Frameworks */,
+				F3A539A41751424B0007DA9B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3ACA12D175132F100687D3D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3ACA177175134D500687D3D /* libPTNArtifacts.a in Frameworks */,
 				F3ACA134175132F100687D3D /* UIKit.framework in Frameworks */,
 				F3ACA136175132F100687D3D /* Foundation.framework in Frameworks */,
 				F3ACA138175132F100687D3D /* CoreGraphics.framework in Frameworks */,
@@ -79,11 +169,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3A539A51751424B0007DA9B /* PTNSampleProjectAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3A539BE1751447A0007DA9B /* Externals */,
+				F3A539AB1751424C0007DA9B /* PTNSampleProjectAppTests.h */,
+				F3A539AC1751424C0007DA9B /* PTNSampleProjectAppTests.m */,
+				F3A539A61751424B0007DA9B /* Supporting Files */,
+			);
+			path = PTNSampleProjectAppTests;
+			sourceTree = "<group>";
+		};
+		F3A539A61751424B0007DA9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3A539A71751424B0007DA9B /* PTNSampleProjectAppTests-Info.plist */,
+				F3A539A81751424B0007DA9B /* InfoPlist.strings */,
+				F3A539AE1751424C0007DA9B /* PTNSampleProjectAppTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3A539B3175144750007DA9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3A539B9175144750007DA9B /* OCMock.framework */,
+				F3A539BB175144750007DA9B /* OCMockTests.octest */,
+				F3A539BD175144750007DA9B /* libOCMock.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3A539BE1751447A0007DA9B /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				F3A539B2175144750007DA9B /* OCMock.xcodeproj */,
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
 		F3ACA127175132F100687D3D = {
 			isa = PBXGroup;
 			children = (
 				F3ACA139175132F100687D3D /* PTNSampleProject */,
+				F3ACA1691751334300687D3D /* Externals */,
 				F3ACA157175132F100687D3D /* PTNSampleProjectTests */,
+				F3A539A51751424B0007DA9B /* PTNSampleProjectAppTests */,
 				F3ACA132175132F100687D3D /* Frameworks */,
 				F3ACA131175132F100687D3D /* Products */,
 			);
@@ -94,6 +225,7 @@
 			children = (
 				F3ACA130175132F100687D3D /* PTNSampleProject.app */,
 				F3ACA150175132F100687D3D /* PTNSampleProjectTests.octest */,
+				F3A539A11751424B0007DA9B /* PTNSampleProjectAppTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +247,7 @@
 				F3ACA142175132F100687D3D /* AppDelegate.h */,
 				F3ACA143175132F100687D3D /* AppDelegate.m */,
 				F3ACA13A175132F100687D3D /* Supporting Files */,
+				F3ACA19017513AFD00687D3D /* Core */,
 			);
 			path = PTNSampleProject;
 			sourceTree = "<group>";
@@ -122,6 +255,7 @@
 		F3ACA13A175132F100687D3D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F3A5399A175140930007DA9B /* AppledocSettings.plist */,
 				F3ACA13B175132F100687D3D /* PTNSampleProject-Info.plist */,
 				F3ACA13C175132F100687D3D /* InfoPlist.strings */,
 				F3ACA13F175132F100687D3D /* main.m */,
@@ -129,6 +263,7 @@
 				F3ACA145175132F100687D3D /* Default.png */,
 				F3ACA147175132F100687D3D /* Default@2x.png */,
 				F3ACA149175132F100687D3D /* Default-568h@2x.png */,
+				F3ACA19117513B9C00687D3D /* Defaults.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -152,9 +287,54 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F3ACA1691751334300687D3D /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				F3ACA16A175134C100687D3D /* PTNArtifacts.xcodeproj */,
+			);
+			name = Externals;
+			path = PTNSampleProject;
+			sourceTree = "<group>";
+		};
+		F3ACA16B175134C100687D3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3ACA174175134C200687D3D /* libPTNArtifacts.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3ACA19017513AFD00687D3D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F3ACA18D17513AF800687D3D /* SPStorage.h */,
+				F3ACA18E17513AF800687D3D /* SPStorage.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F3A539A01751424B0007DA9B /* PTNSampleProjectAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3A539AF1751424C0007DA9B /* Build configuration list for PBXNativeTarget "PTNSampleProjectAppTests" */;
+			buildPhases = (
+				F3A5399C1751424B0007DA9B /* Sources */,
+				F3A5399D1751424B0007DA9B /* Frameworks */,
+				F3A5399E1751424B0007DA9B /* Resources */,
+				F3A5399F1751424B0007DA9B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3A539C0175144990007DA9B /* PBXTargetDependency */,
+			);
+			name = PTNSampleProjectAppTests;
+			productName = PTNSampleProjectAppTests;
+			productReference = F3A539A11751424B0007DA9B /* PTNSampleProjectAppTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		F3ACA12F175132F100687D3D /* PTNSampleProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3ACA162175132F100687D3D /* Build configuration list for PBXNativeTarget "PTNSampleProject" */;
@@ -166,6 +346,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F3ACA176175134CE00687D3D /* PBXTargetDependency */,
 			);
 			name = PTNSampleProject;
 			productName = PTNSampleProject;
@@ -210,15 +391,66 @@
 			mainGroup = F3ACA127175132F100687D3D;
 			productRefGroup = F3ACA131175132F100687D3D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F3A539B3175144750007DA9B /* Products */;
+					ProjectRef = F3A539B2175144750007DA9B /* OCMock.xcodeproj */;
+				},
+				{
+					ProductGroup = F3ACA16B175134C100687D3D /* Products */;
+					ProjectRef = F3ACA16A175134C100687D3D /* PTNArtifacts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F3ACA12F175132F100687D3D /* PTNSampleProject */,
 				F3ACA14F175132F100687D3D /* PTNSampleProjectTests */,
+				F3A539A01751424B0007DA9B /* PTNSampleProjectAppTests */,
+				F3A539951751403E0007DA9B /* Documentation */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		F3A539B9175144750007DA9B /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = F3A539B8175144750007DA9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3A539BB175144750007DA9B /* OCMockTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCMockTests.octest;
+			remoteRef = F3A539BA175144750007DA9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3A539BD175144750007DA9B /* libOCMock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOCMock.a;
+			remoteRef = F3A539BC175144750007DA9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3ACA174175134C200687D3D /* libPTNArtifacts.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPTNArtifacts.a;
+			remoteRef = F3ACA173175134C200687D3D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		F3A5399E1751424B0007DA9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A539AA1751424B0007DA9B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3ACA12E175132F100687D3D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +459,8 @@
 				F3ACA146175132F100687D3D /* Default.png in Resources */,
 				F3ACA148175132F100687D3D /* Default@2x.png in Resources */,
 				F3ACA14A175132F100687D3D /* Default-568h@2x.png in Resources */,
+				F3ACA19217513B9C00687D3D /* Defaults.plist in Resources */,
+				F3A5399B175140930007DA9B /* AppledocSettings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +475,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		F3A53999175140430007DA9B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "appledoc .\ntar czvf documentation.tar.gz Documentation/";
+			showEnvVarsInLog = 0;
+		};
+		F3A5399F1751424B0007DA9B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 		F3ACA14E175132F100687D3D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,12 +518,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F3A5399C1751424B0007DA9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A539AD1751424C0007DA9B /* PTNSampleProjectAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3ACA12C175132F100687D3D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F3ACA140175132F100687D3D /* main.m in Sources */,
 				F3ACA144175132F100687D3D /* AppDelegate.m in Sources */,
+				F3ACA18F17513AF800687D3D /* SPStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,14 +547,32 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F3A539C0175144990007DA9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OCMockLib;
+			targetProxy = F3A539BF175144990007DA9B /* PBXContainerItemProxy */;
+		};
 		F3ACA156175132F100687D3D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F3ACA12F175132F100687D3D /* PTNSampleProject */;
 			targetProxy = F3ACA155175132F100687D3D /* PBXContainerItemProxy */;
 		};
+		F3ACA176175134CE00687D3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PTNArtifacts;
+			targetProxy = F3ACA175175134CE00687D3D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F3A539A81751424B0007DA9B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3A539A91751424B0007DA9B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		F3ACA13C175132F100687D3D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -304,6 +592,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F3A539971751403E0007DA9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F3A539981751403E0007DA9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F3A539B01751424C0007DA9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/$(PROJECT_NAME).app/$(PROJECT_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTNSampleProjectAppTests/PTNSampleProjectAppTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
+				INFOPLIST_FILE = "PTNSampleProjectAppTests/PTNSampleProjectAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F3A539B11751424C0007DA9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/$(PROJECT_NAME).app/$(PROJECT_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PTNSampleProjectAppTests/PTNSampleProjectAppTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)";
+				INFOPLIST_FILE = "PTNSampleProjectAppTests/PTNSampleProjectAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		F3ACA160175132F100687D3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -365,6 +703,16 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTNSampleProject/PTNSampleProject-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					PTN_LOGGING,
+					PTN_LOG_ERROR,
+					PTN_LOG_INFO,
+					PTN_LOG_WARN,
+					PTN_LOG_TRACE,
+					PTN_LOG_DEBUG,
+				);
 				INFOPLIST_FILE = "PTNSampleProject/PTNSampleProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -376,6 +724,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTNSampleProject/PTNSampleProject-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					PTN_LOGGING,
+					PTN_LOG_ERROR,
+					PTN_LOG_INFO,
+					PTN_LOG_WARN,
+				);
 				INFOPLIST_FILE = "PTNSampleProject/PTNSampleProject-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -419,6 +773,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F3A539961751403E0007DA9B /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A539971751403E0007DA9B /* Debug */,
+				F3A539981751403E0007DA9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F3A539AF1751424C0007DA9B /* Build configuration list for PBXNativeTarget "PTNSampleProjectAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A539B01751424C0007DA9B /* Debug */,
+				F3A539B11751424C0007DA9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F3ACA12B175132F100687D3D /* Build configuration list for PBXProject "PTNSampleProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -435,6 +805,7 @@
 				F3ACA164175132F100687D3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3ACA165175132F100687D3D /* Build configuration list for PBXNativeTarget "PTNSampleProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +814,7 @@
 				F3ACA167175132F100687D3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

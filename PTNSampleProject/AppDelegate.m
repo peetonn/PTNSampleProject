@@ -7,11 +7,33 @@
 //
 
 #import "AppDelegate.h"
+#import <PTNArtifacts/PTNArtifacts.h>
+#import "SPStorage.h"
+
+#define SP_LOG_FILENAME @"default.log"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [PTNLogger logToFile:SP_LOG_FILENAME];
+    LOG_INFO(@"Sample project started. Logging into %@ file (LOG_FILENAME macro).", SP_LOG_FILENAME);
+    /*LOG_DEBUG(@"Log levels are controled by presence of following preprocessor macros in build settings of a project. They can be overriden in .m files as well.");
+    LOG_INFO(@"Trace logging - PTN_LOG_TRACE macro \n\
+             Debug logging - PTN_LOG_DEBUG macro\n\
+             Info logging - PTN_LOG_INFO macro\n\
+             Warnings logging - PTN_LOG_WARN macro\n\
+             Error logging - PTNL_LOG_ERROR macro");
+    LOG_TRACE(@"Trace log example");
+    LOG_DEBUG(@"Debug log example");
+    LOG_WARN(@"Warning log example");
+    LOG_ERROR(@"Error log example");*/
+    
+    if (![[SPStorage sharedStorageController] wasAppEndedNormally])
+        LOG_WARN(@"Application was not ended normally. Crash log:\n%@",[PTNLogger getLogFile:SP_LOG_FILENAME]);
+    else
+        [[SPStorage sharedStorageController] setAppEndedNormally:NO];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -44,6 +66,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [[SPStorage sharedStorageController] setAppEndedNormally:YES];
 }
 
 @end
