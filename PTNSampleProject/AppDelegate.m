@@ -38,6 +38,19 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    // here is the example of using PTNStorage class
+    if ([SPStorage sharedStorageController].isFirstLaunch)
+    {
+        LOG_INFO(@"First launch of app");
+        [SPStorage sharedStorageController].isFirstLaunch = NO;
+    }
+    else
+    {
+        LOG_INFO(@"Last launch was at: %@",[SPStorage sharedStorageController].launchDateTime);
+    }
+    [SPStorage sharedStorageController].launchDateTime = [NSDate date];
+    
     return YES;
 }
 
