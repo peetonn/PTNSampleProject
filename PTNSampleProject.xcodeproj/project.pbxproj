@@ -76,6 +76,13 @@
 			remoteGlobalIDString = 030EF0DB14632FF700B04273;
 			remoteInfo = OCMockLib;
 		};
+		F3A539DD175154700007DA9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3ACA128175132F100687D3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3ACA12F175132F100687D3D;
+			remoteInfo = PTNSampleProject;
+		};
 		F3ACA155175132F100687D3D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F3ACA128175132F100687D3D /* Project object */;
@@ -328,6 +335,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F3A539DE175154700007DA9B /* PBXTargetDependency */,
 				F3A539C0175144990007DA9B /* PBXTargetDependency */,
 			);
 			name = PTNSampleProjectAppTests;
@@ -551,6 +559,11 @@
 			isa = PBXTargetDependency;
 			name = OCMockLib;
 			targetProxy = F3A539BF175144990007DA9B /* PBXContainerItemProxy */;
+		};
+		F3A539DE175154700007DA9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3ACA12F175132F100687D3D /* PTNSampleProject */;
+			targetProxy = F3A539DD175154700007DA9B /* PBXContainerItemProxy */;
 		};
 		F3ACA156175132F100687D3D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -780,6 +793,7 @@
 				F3A539981751403E0007DA9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3A539AF1751424C0007DA9B /* Build configuration list for PBXNativeTarget "PTNSampleProjectAppTests" */ = {
 			isa = XCConfigurationList;
@@ -788,6 +802,7 @@
 				F3A539B11751424C0007DA9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3ACA12B175132F100687D3D /* Build configuration list for PBXProject "PTNSampleProject" */ = {
 			isa = XCConfigurationList;
